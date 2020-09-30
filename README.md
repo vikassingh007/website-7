@@ -7,10 +7,10 @@
 We welcome contributions and feedback on our website!
 Please file a request in our
 [issue tracker](https://github.com/flutter/website/issues/new)
-and we'll take a look.
+And we'll take a look.
 
 For simple changes (such as to CSS and text), you probably don't need to
-build this site.  Often you can make changes using the GitHub UI.
+Build this site.  Often you can make changes using the GitHub UI.
 
 If you want/need to build, read on.
 
@@ -68,7 +68,7 @@ if you already have the required packages installed.
 1. <code>cd <i>\<path-to-this-repo></i></code> &nbsp;&nbsp;# change to
    **root of this repo**
 1. `source ./tool/env-set.sh` &nbsp;&nbsp;#
-   initialize environment variables; install/use required Node & Ruby version
+   Initialize environment variables; install/use required Node & Ruby version
 1. `./tool/before-install.sh` &nbsp;&nbsp;#
    install core set of required tools
 1. `./tool/install.sh` &nbsp;&nbsp;#
@@ -88,14 +88,14 @@ if you already have the required packages installed.
     - `./tool/serve.sh` (can also run via `npm run start`)
 
     or
-    - `bundle exec jekyll serve --incremental --watch --livereload --port 4002`
+    - `bundle exec Jekyll serve --incremental --watch --livereload --port 4002`
 
       **Note**: Unless you're editing files under `site-shared`, you can safely
       ignore `ERROR: directory is already being watched` messages.
       For details, see [#1363](https://github.com/flutter/website/issues/1363).
 
       **Note**: The first time you run either one of these commands,
-      jekyll takes anywhere between 10 - 20 seconds to generate static
+      Jekyll takes anywhere between 10 - 20 seconds to generate static
       content inside the `_sites` directory. If you try to verify the
       site locally but aren't able to see the content right away,
       wait 20 seconds before stopping the
@@ -104,7 +104,7 @@ if you already have the required packages installed.
     `./tool/shared/check-links.sh`
 
 > TIP: Sometimes Jekyll gets confused and seems to be out-of-sync. (This might
-> happen, for example, when you pull from master and lots of files have moved.)
+> happen, for example, when you pull from a master and lots of files have moved.)
 > To fix Jekyll, stop the `serve.sh` script and remove the generated site files:
 > hand, and then restart the `serve.sh` script:
 
@@ -163,7 +163,7 @@ You can deploy your local edits to a personal staging site as follows
       ```console
       $ npx firebase use --add
       ? Which project do you want to add? <select the project you created>
-      ? What alias do you want to use for this project? (e.g. staging) my-foo
+      ? What alias do you want to use for this project? (e.g. staging), my-foo
       ```
 
  1. Tell Firebase that you want to deploy to staging:
@@ -209,13 +209,13 @@ need to manually deploy, use the deploy script and the `default` project:
 
 
 The [site-shared](https://github.com/dart-lang/site-shared) repo
-contains infrastructure shared by most of our Dart and Flutter websites.
-As a result, we've moved some of content of this README to the
+Contains infrastructure shared by most of our Dart and Flutter websites.
+As a result, we've moved some of the content of this README to the
 [docs](https://github.com/dart-lang/site-shared/docs)
-directory in the shared repo.
+Directory in the shared repo.
 
 For more information on using/writing for this repo,
-refer to the following docs:
+Refer to the following docs:
 
 * [Infrastructure](https://github.com/dart-lang/site-shared/blob/master/doc/infrastructure.md)
 * [Markdown](https://github.com/dart-lang/site-shared/blob/master/doc/markdown.md)
